@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #95c983;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(144, 187, 126);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.botones-variables, .botones-simbolos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px;
+    border-color: black;
+}
+
+.botones button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #3d8047;
+    color: rgb(237, 231, 231);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.botones button:hover {
+    background-color: #318c4e;
+    transform: scale(1.05);
+}
+
+.botones button:active {
+    transform: scale(0.95);
+}
+
+.leyenda ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leyenda li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #09662e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#resultadoTabla table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #afae79ab;
+}
+
+#resultadoTabla th, #resultadoTabla td {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+#resultadoTabla th {
+    background-color: #007bff;
+    color: white;
+}
+
+#resultadoTabla tr:nth-child(even) {
+    background-color: #f9f6f6;
+}
+
+#resultadoTabla {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tablaVerdadForm {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #a7deae;
+}
+
+#tablaVerdadForm button {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border-color: black;
+    border: 2px;
+    color: rgb(254, 253, 253);
+    background-color: #096f46;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+/* Los botones "Calcular" y "Limpiar" tendrán un tamaño de fuente mayor */
+#tablaVerdadForm button[type="submit"],
+#tablaVerdadForm button#btnLimpiar {
+    font-size: 20px;
+}
+
+#tablaVerdadForm button[type="submit"]:hover, 
+#tablaVerdadForm button#btnLimpiar:hover {
+    background-color: #318c4e;
+    transform: scale(0.97);
+}
+
+#tablaVerdadForm button[type="submit"]:active, 
+#tablaVerdadForm button#btnLimpiar:active {
+    transform: scale(0.95);
+}
+
+/* Estilos para el textarea */
+#expresion {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid #096f46;
+    resize: vertical;
+}
+
+/* Estilo para el marco de la licencia con bordes curvos */
+footer .license-frame {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+}
